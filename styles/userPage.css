@@ -1,0 +1,14 @@
+li {
+    padding: 20px;
+}
+h3 {
+    margin: 5px;
+}
+button {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border: 1px;
+    border-radius: 5px;
+    margin: 5px;
+}

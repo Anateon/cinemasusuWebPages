@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="styles/reglog.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="header-logo">
+    <a href="/cinema/main.html">
+      КупитьБилеты.рф
+    </a>
+  </div>
+</header>
+
+<section class="forms-section">
+  <div class="forms">
+    <div class="form-wrapper is-active">
+      <button type="button" class="switcher switcher-login">
+        Вход
+        <span class="underline"></span>
+      </button>
+      <form class="form form-login" action="http://localhost:14050/users/authenticate" method="post" id="login-form">
+        <fieldset>
+          <div class="input-block">
+            <label for="login-nick">Логин</label>
+            <input name="Username" id="login-nick" autocomplete="username" type="text" required>
+          </div>
+          <div class="input-block">
+            <label for="login-password">Пароль</label>
+            <input name="Password" id="login-password" autocomplete="current-password" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-login">Вход</button>
+      </form>
+    </div>
+    <div class="form-wrapper">
+      <button type="button" class="switcher switcher-signup">
+        Регистрация
+        <span class="underline"></span>
+      </button>
+      <form class="form form-signup" action="http://localhost:14050/users/register" method="post" id="signup-form">
+        <fieldset>
+          <div class="input-block">
+            <label for="signup-login">Логин</label>
+            <input name="Username" id="signup-login" autocomplete="username" type="text" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-first-name">Имя</label>
+            <input name="FirstName" id="signup-first-name" autocomplete="given-name" type="text" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-last-name">Фамилия</label>
+            <input name="LastName" id="signup-last-name" autocomplete="family-name" type="text" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-patronymic">Отчество</label>
+            <input name="Patronymic" id="signup-patronymic" type="text">
+          </div>
+          <div class="input-block">
+            <label for="signup-date">Дата рождения</label>
+            <input name="DateOfBirth" id="signup-date" type="date" autocomplete="bday" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password">Пароль</label>
+            <input name="Password" id="signup-password" autocomplete="new-password" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-signup">Регистрация</button>
+      </form>
+    </div>
+  </div>
+</section>
+<script src="scripts/reglog.js"></script>
+</body>
+</html>

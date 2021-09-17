@@ -1,0 +1,102 @@
+.container {
+    width: 630px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.film-name {
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.hall-name {
+    text-align: left;
+}
+
+.session-date {
+    border-top: 2px solid white;
+    padding: 10px;
+}
+
+.session-times-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 5px;
+}
+
+.session-time {
+    cursor: pointer;
+    background: #bf4e4e;
+    margin: 5px;
+}
+
+.film-properties {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.film-properties li {
+    font-size: 10pt;
+    list-style-type: none;
+    background: #613844;
+    color: white;
+    margin: 5px;
+
+}
+
+.signin-button {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background: #613844;
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    font-size: 17px;
+    padding: 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style-type: none;
+    background: #9B857D;
+    color: white;
+    padding: 5px 5px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+h3 {
+    margin: 15px;
+}
+body {
+    background-color: #653b3b;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    background-size:cover;
+    justify-content: space-evenly;
+    background-color: #bf4e4e;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.header-logo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25pt;
+}

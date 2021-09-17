@@ -1,0 +1,121 @@
+input {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: arial;
+    text-align: center;
+    color: white;
+}
+
+.checkbox-btn {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    user-select: none;
+    position: relative;
+
+}
+.checkbox-btn input[type=checkbox] {
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+.checkbox-btn span {
+    display: inline-block;
+    cursor: pointer;
+    line-height: 30px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    transition: background 0.2s ease;
+    background: #c9e7b9;
+    width: 45px;
+    padding: 0;
+}
+
+/* Checked */
+.checkbox-btn input[type=checkbox]:checked + span {
+    background: #5eff00;
+}
+
+/* Focus */
+.focused span {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Hover */
+.checkbox-btn:hover {
+    color: #666;
+}
+
+/* Active */
+.checkbox-btn input[type=checkbox]:active:not(:disabled) + span {
+    background: #d2c5ac;
+    color: #000;
+}
+
+/* Disabled */
+.checkbox-btn input[type=checkbox]:disabled + span {
+    background: #efefef;
+    color: #666;
+    cursor: default;
+}
+.checkbox-btn input[type=checkbox]:checked:disabled + span {
+    background: #f7efdc;
+}
+
+table tr:nth-child(odd) {
+    background-color: #d9e2f3;
+}
+
+table tr:nth-child(even) {
+    background-color: #cecece;
+}
+
+.checkbox-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+}
+
+table {
+    border-spacing: 0px;
+    table-layout: fixed;
+    color:black;
+    box-shadow: 0 0 15px rgba(255, 255, 255);
+}
+tr {
+    height: 40px;
+}
+
+input[type="submit"] {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    font-size: 20px;
+}
+
+.Price-calculation {
+    margin: 10px;
+}
+
+#buyTicket {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border: 1px;
+    border-radius: 5px;
+}
+
+#buyTicket:disabled {
+    cursor: default;
+}
